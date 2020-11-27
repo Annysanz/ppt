@@ -19,3 +19,4 @@ Quien llegue a 3 victorias en el marcador 🏆ganará el juego🏆.
 
  1. HTML
  2. CSS
+ 3. JavaScript
