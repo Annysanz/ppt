@@ -1,0 +1,96 @@
+//#ff7400 NARANJA
+//#073763 AZUL OSCURO
+//#399271 VERDE
+
+
+@import './componentes/modalInstructions';
+@import './componentes/modalPlay';
+@import './componentes/modalBye';
+@import './componentes/modalName';
+
+
+
+
+body{
+    background-color:#073763;
+    color: black;
+    
+}
+
+
+.principal_screen{
+    
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.title_play{
+color: white;
+margin-top:20px;
+}
+.secti{
+    margin:5px;
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    width:50px;
+}
+
+.logo_play{
+    display: flex;    
+    align-items: center;
+      
+    
+}
+
+.bot{
+    background-color: #399271;
+    border: 3px solid #ff7400;
+    color: white;
+    
+}
+.bot:hover{
+    color:#ff7400;
+}
+.i{
+    margin: 20px;
+}
+.options_players{
+    
+    border: 3px solid #ff7400;
+    background-color: #399271;
+    border-radius: 5%;
+}
+
+
+.footer_principal{
+    background-color: #ff7400;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+.bieiviLogo{
+    margin:5px;
+    height: 30px;
+}
+
+.redes, .instructions>h4{
+    color: #fff;
+
+}
+

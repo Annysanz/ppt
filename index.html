@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Juego PIEDRA, PAPEL Y TIJERA | Desarrollado por Bi Ei Vi</title>
+    <meta name="description" content="Juega al clásico Piedra, Papel o Tijera desarrollado por Bi Ei Vi, del curso FullStack Tomillo-F5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="keywords" content="juegos, curso FullStack, Tomillo-F5, coders, desarrollo web"/>
+    <meta name="author" content="BiEiVi" />
+    <meta name="copyright" content="Desarrollado por Bi Ei Vi" />
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+  </head>
+  <body>
+
+    <!--PANTALLA PRINCIPAL-->
+  <main>
+    <article class="container principal_screen">
+    <!--TITULO-->
+      <div class="row secti title">
+        <div class="col title_play text-center"><img class="logo_ppt" src="images/logo-ppt3.svg"><h3>PIEDRA, PAPEL, TIJERA</h3></div>
+      </div>
+    <!--OPCIONES JUEGO-->
+      <button class="row secti options_players" id="openPlay">
+        <div class="fila">
+        <div class="logo_play">
+          <img class="image one_player i" src="images/un_jugador.png" alt="Icono jugador 1">
+          <div class=""><h2>VS.</h2></div>
+          <img class="image laptop i" src="images/ordenador.png" alt="Icono PC">
+        </div>
+        </div>
+      </button>
+    <!--INSTRUCCIONES-->
+      <div class="row secti instructions">
+        <button class="btn bot instructions" id="openInstructions"><h4>INSTRUCCIONES</h4></button>
+      </div>
+  </article>
+</main>
+    <footer>
+      <div class="footer_principal">
+        <div>
+          <img class="bieiviLogo"src="images/svg/logos/logoBiEiVi_sobrenegro.svg" alt="Logotipo de BiEiVi">
+        </div>
+        <div>
+          Desarrollado por Bi Ei Vi
+        </div>
+        <!-- REDES SOCIALES -->
+        <div class="redes_sociales">
+          <a class="redes" href="https://www.instagram.com/bieivi_buenavibra/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="redes" href="https://belopmardev.github.io/bieivi.github.io/bieivi/"  target="_blank" title="Enlace externo: página web de BiEiVi">VISITA LA WEB</a>
+        </div>  
+      </div>
+    </footer>
+  </body>
+
+  <!--VENTANA MODAL INTRODUCE TU NOMBRE-->
+  <section class="modal modal-hidden">
+    <div class="modal-container">
+      <div class="modal-body">
+        <h4>Introduce tu nombre</h4>    
+        <form id="frmcontacto">
+          <p><span>Nombre: </span><input type="text" name="txtname"></p>
+          </form>
+        <button class="btn cancelar btn-danger" name="cancelar">Cancelar </button>
+        <button class="btn aceptar btn-primary" name="guardar">Aceptar</button>
+      </div>
+    </div>
+  </section>
+
+  <!--VENTANA MODAL JUEGO -->
+  <article class="play_screen" id="play">
+    <div class="container">
+    <!--CONTRINCANTES-->
+    <section class="row contrincantes">
+      <div class="col-md-6 player nombre">
+        <div><img class="logo_un_jugador jugador" src="images/un_jugador.png" alt="Icono player 1"></div>
+        <div class="text_name players_title" id="player_name">Nombre</div>
+      </div>
+      <div class="col-md-6 d-none d-sm-none d-md-flex player pc">
+        <div><img class="logo_ordenador laptop" src="images/ordenador.png" alt="Icono PC"></div>
+        <div class="text_pc players_title">PC</div>
+      </div>
+    </section>
+    <!--PANTALLAS JUEGO-->
+    <section class="row pantallas_juego">
+      <!--JUGADOR 1-->
+        <div class="col-md-6 player1 section">
+          <div class="piedraPapelTijera">
+            <img src="images/piedra.jpg" class="piedra img" id="piedra" alt="Icono Piedra">
+            <img src="images/papel.jpg" class="papel img" id="papel" alt="Icono Papel">
+            <img src="images/tijera.jpg" class="tijera img" id="tijera" alt="Icono Tijera">
+          </div>
+        <!--ESTA ES LA IMAGEN OCULTA QUE SE ACTIVA AL ELEGIR PIEDRA/PAPEL/TIJERA-->
+          <div class="aJugar imagen_oculta text-center mt-4">
+            <h2>¡A jugar, te toca!</h2>
+          </div>
+          <div class="mensaje_victoria">
+            <h4 class="mensajeGanasPierdes text-center mt-4"></h4>
+          </div>
+        </div>          
+      <!--MÁQUINA-->
+        <div class="col-md-6 player2 section">
+          <div class="piedraPapelTijera">
+            <img src="images/piedra.jpg" class="piedra img" alt="Icono Piedra">
+            <img src="images/papel.jpg" class="papel img" alt="Icono Papel">
+            <img src="images/tijera.jpg" class="tijera img" alt="Icono Tijera">
+          </div>
+          <div class="box_loader">
+            <img class="loader" src="images/loader.png" alt="Imagen de carga del juego">
+          </div>
+        <!--ESTA ES LA OPACIDAD CUANDO NO ESTÁ JUGANDO EL PLAYER1-->
+          <div class="overlay"></div>
+        </div>
+    </section>
+      <!--MARCADOR-->
+        <aside class="marcador container text-center">
+          <div class="row ">
+            <div class="col-12 text-center scores title_score"><div><b>SCORE</b></div></div>
+          </div>
+
+          <div class="row">            
+            <div class="col-6 user-score scores text-center"><b>0</b></div>
+            <div class="col-6 comp-score scores text-center"><b>0</b></div>
+          </div>
+        </aside>
+      <!--FOOTER JUEGO-->
+      <div class="row footer_juego ">
+        <div class="col botonsFooter ">
+          <button class="boton_footer menu1">Home</button>
+          <button class="boton_footer finalizar">Finalizar</button></div>
+      </div>
+    </div>    
+  </article>
+
+    <!--VENTANA MODAL WINNER/LOSER-->
+    <section class="modal modal-hidden modal-hidden-w">
+      <div class="modal-container">
+        <div class="modal-body">
+          <h4 class="finJuego"></h4>    
+          <button class="btn cancelar btn-danger repite" name="cancelar">Volver a Jugar</button>
+          <button class="btn aceptar btn-primary salir" name="guardar">Menu</button>
+        </div>
+      </div>
+    </section>
+
+  <!--VENTANA MODAL INSTRUCCIONES-->
+  <article class="instructions_screen" id="instructions">
+    <section class="container">
+    <!--INSTRUCCIONES-->
+    <div class="row titleInstructions">
+      <h2 class="col title_intructions text-center">Instrucciones</h2>
+    </div>
+    <!--REGLAS DEL JUEGO-->
+      <section class="row explicacion_instrucciones">
+      <div class="texto">
+        <p>Pulsa el botón para jugar contra la máquina y empieza tu propia sala del juego de piedra papel tijera. Ahora elige piedra papel o tijera. Después será el turno de la máquina.</p>
+        <p>Existen tres elementos distintos:</p>
+          <ol>
+            <li>La <b>piedra</b>, que vence a la <b>tijera</b>.</li>
+            <li>La <b>tijera</b>, que vence al <b>papel</b>.</li>
+            <li>El <b>papel</b>, que vence a la <b>piedra</b>.</li>
+          </ol>
+        <p>¿Quién ganará?¿La máquina o tu? Quien llegue a 3 puntos antes será el campeón.</p>
+      </div> 
+      </section>
+    <!--FOOTER JUEGO-->
+    <div class="row footer_juego_instructions">
+      <div class="col botonsFooter "><button class="boton_footer menu2">Home</button>
+      </div>
+    </div>
+    </section>
+  </article>
+    <!--VENTANA MODAL "¿ABANDONAS?"" SE ABRE CUANDO LE DAS A FINALIZAR-->
+    <div class="bye_screen" id="bye">
+      <div class="container">
+        <div><h2>¿Abandonas la partida?</h2></div>
+        <div><h2>¡Esperamos que sea porque te vas a echar unas cañas!</h2></div>
+        <div class="col botonsFooter "><button class="boton_footer fin">Volver</button></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  
+</html>

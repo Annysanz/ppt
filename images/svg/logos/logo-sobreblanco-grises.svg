@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="173.85826"
+   height="174.51968"
+   viewBox="0 0 46.000229 46.175058"
+   version="1.1"
+   id="svg3344"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="logo-sobreblanco-grises.svg">
+  <defs
+     id="defs3338" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="196.26943"
+     inkscape:cy="195.94428"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     units="px"
+     inkscape:pagecheckerboard="true" />
+  <metadata
+     id="metadata3341">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-250.82337)">
+    <path
+       style="fill:#727272;fill-opacity:1;stroke:#727272;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.392606,257.24437 0.0888,39.28754 20.636896,-43.5942 z"
+       id="path4706"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#5a5a51;fill-opacity:1;stroke:#5a5a5a;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1.937443,251.49888 20.458965,4.74929 20.725834,-4.56302 z"
+       id="path4708"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#353535;fill-opacity:1;stroke:#353535;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       d="m 22.396408,257.24437 -0.08808,39.28754 -20.456945,-43.5942 z"
+       id="path4706-0"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#5a5a51;fill-opacity:1;stroke:#5a5a5a;stroke-width:0.18825684;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 33.759372,276.3012 -8.176268,17.73616 h 16.100928 l -6.03786,-20.75508 -0.25146,-0.50318 z"
+       id="path4725"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

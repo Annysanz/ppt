@@ -1,0 +1,40 @@
+.instructions_screen {
+    background-color: #073763;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: none;
+    align-items: center;
+  }
+.titleInstructions{
+    background-color: #ff7400;
+    border: 3px solid #399271;
+    color: white;
+    
+} 
+
+.explicacion_instrucciones{
+    height: 300px;
+    background-color: white;
+    border: 3px solid #399271;
+    
+    
+}
+.texto{
+    color:#073763;
+    font-weight: bold;
+    padding: 20px;
+}
+.boton_footer{
+    background-color: #399271; 
+    color:white;
+}
+.footer_juego_instructions{
+    background-color: #ff7400;
+    border: 3px solid #399271;
+   
+}
+
