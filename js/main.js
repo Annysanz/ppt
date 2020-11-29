@@ -89,7 +89,8 @@ function capturarClick(e) {
         let pc = turnoPc()
         ronda(confir, pc)
   
-  document.querySelector(".loader").style.visibility="hidden"  }
+  //document.querySelector(".loader").style.visibility="hidden"  
+}
 }
 
 //Esta funcion agrega la imagen seleccionada
@@ -186,7 +187,7 @@ function partida(){
 
 function openWinner(){
     if (contadorUser == nRondas){
-        document.querySelector(".finJuego").innerHTML="¡¡¿Victoria!!! ¡¡¡Qué pro!!! ^^"
+        document.querySelector(".finJuego").innerHTML="<h2><b>¡¡¡Victoria!!!</b></h2> <p class='evento'>¡Espera! antes de darte el número secreto, porque no revisas nuestras redes sociales, quiza sea tu última vez en este mundo...</p>"
         document.querySelector(".modal-hidden-w").style.display="flex"
 
     }else{

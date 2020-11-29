@@ -7,9 +7,7 @@
   height: 100%;
   color: #000;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .titleInstructions {
@@ -49,9 +47,7 @@
   height: 100%;
   color: #000;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   z-index: 1;
 }
 
@@ -74,15 +70,9 @@
 }
 
 .pc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .jugador {
@@ -124,26 +114,19 @@
 }
 
 .piedraPapelTijera {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .img {
   width: 50px;
   margin: 0.75rem;
-  -webkit-transition-duration: 0s;
-          transition-duration: 0s;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 0s;
+  transition-timing-function: linear;
 }
 
 .img:hover {
-  -webkit-box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.47);
-          box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.47);
   padding: 0px;
   opacity: 0.8;
   border-radius: 10px;
@@ -156,15 +139,13 @@
 .logo_ppt {
   width: 150px;
   height: 150px;
-  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   border: 2px solid #073763;
   border-radius: 40px;
 }
 
 .logo_ppt:hover {
-  -webkit-transform: rotate(1440deg);
-          transform: rotate(1440deg);
+  transform: rotate(1440deg);
   border-radius: 35px;
   height: 150px;
   width: 150px;
@@ -185,57 +166,32 @@
 }
 
 .title_score {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #073763;
   color: white;
 }
 
 .box_loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 20px;
 }
 
 .loader {
   width: 100px;
-  -webkit-animation-name: girar;
-          animation-name: girar;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes girar {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes girar {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -244,15 +200,9 @@
 }
 
 .nombre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #bye {
@@ -264,14 +214,14 @@
   height: 100%;
   color: #000;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   z-index: 3;
+}
+
+.evento {
+  color: aliceblue;
 }
 
 .modal {
@@ -327,20 +277,15 @@
 
 .modal-hidden {
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-blur {
   -moz-filter: blur(8px);
   -o-filter: blur(8px);
   -ms-filter: blur(8px);
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
+  filter: blur(8px);
 }
 
 .cancelar, .aceptar {
@@ -358,20 +303,11 @@ body {
 
 .principal_screen {
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .title_play {
@@ -381,12 +317,8 @@ body {
 
 .secti {
   margin: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .image {
@@ -394,12 +326,8 @@ body {
 }
 
 .logo_play {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .bot {
@@ -429,15 +357,9 @@ body {
   width: 100%;
   height: 50px;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 15px;
 }
 
@@ -449,4 +371,3 @@ body {
 .redes, .instructions > h4 {
   color: #fff;
 }
-/*# sourceMappingURL=base.css.map */
