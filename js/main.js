@@ -89,7 +89,7 @@ function capturarClick(e) {
         let pc = turnoPc()
         ronda(confir, pc)
   
-  //document.querySelector(".loader").style.visibility="hidden"  
+  document.querySelector(".loader").style.visibility="hidden"  
 }
 }
 
