@@ -9,9 +9,9 @@ Luego elige piedra papel o tijera. Después será el turno de la máquina.
 
   ### Reglas del juego
   Cada jugador puede elegir entre tres elementos, teniendo en cuenta que:
-  * La **piedra**, que vence a la **tijera**.
-  * La **tijera**, que vence al **papel**.
-  * El **papel**, que vence a la **piedra**.
+  * La 🥌**piedra**🥌, que vence a la ✂️**tijera**✂️.
+  * La ✂️**tijera**✂️, que vence al 📜**papel**📜.
+  * El 📜**papel**📜, que vence a la 🥌**piedra**🥌.
   
 Quien llegue a 3 victorias en el marcador 🏆ganará el juego🏆.
 
