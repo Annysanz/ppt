@@ -20,3 +20,5 @@ Quien llegue a 3 victorias en el marcador 🏆ganará el juego🏆.
  1. HTML
  2. CSS
  3. JavaScript
+ 
+ Haz clic en el enlace y [comienza a jugar](https://belopmardev.github.io/ppt/)
