@@ -187,7 +187,7 @@ function partida(){
 
 function openWinner(){
     if (contadorUser == nRondas){
-        document.querySelector(".finJuego").innerHTML="<h2><b>¡¡¡Victoria!!!</b></h2> <p class='evento'>¡Espera! antes de darte el número secreto, porque no revisas nuestras redes sociales, quiza sea tu última vez en este mundo...</p>"
+        document.querySelector(".finJuego").innerHTML="<h2><b>¡¡¡Victoria!!!</b></h2> <p class='evento'>¡Espera! antes de darte el número secreto, ¿Por qué no revisas nuestras redes sociales? Quizás sea tu última vez en este mundo...</p>"
         document.querySelector(".modal-hidden-w").style.display="flex"
 
     }else{
